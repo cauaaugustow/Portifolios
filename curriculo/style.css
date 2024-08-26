@@ -1,0 +1,306 @@
+/*MODELO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.title span{
+    color: blue;
+}
+/*NAVBAR*/
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: .2s;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header a:hover{
+    transform: scale(1.05);
+    color: blue;
+}
+
+header h2 span{
+    color: blue;
+}
+
+/*TOPO DO SITE*/
+
+section{
+    padding: 80px 4%;
+}
+
+
+section .img-topo-site img{
+    height: 500px;
+    width: 400px;
+    border: 0;
+    box-shadow: 0px 0px 14px blue;
+    border-radius: 12px;
+}
+
+section .txt-topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+section .txt-topo-site h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 17px;
+}
+
+section .txt-topo-site h2 span{
+    color: blue;
+}
+
+section .txt-topo-site p{
+    margin-right:10px;
+}
+
+section .botao-topo-site button{
+    width:120px ;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: .2s;
+    border: 0;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+section button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px blue;
+}
+
+.img-topo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*TIPO DA ESPECIALIEDADE*/
+
+section .especialiedades{
+    padding: 40px 4%;
+}
+
+section .especialiedades .flex{
+    gap: 30px;
+}
+
+.especialiedades .especialiedades-box{
+    padding: 50px;
+    margin: 0 auto;
+    border: 0;
+    transition: .2s;
+    border-radius: 15px;
+    
+}
+
+.especialiedades .especialiedades-box i{
+    font-size: 70px;
+    color: blue;
+}
+
+.especialiedades .especialiedades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px blue;
+}
+
+.especialiedades h2{
+    margin-bottom: 20px;
+}
+
+.especialiedades-box{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate-reverse;
+}
+
+
+/*TIPO DO PERFIL*/
+
+section{
+    padding: 80px 4%;
+}
+
+section .img-meio img{
+    height: 600px;
+    width: 500px;
+}
+
+section .flex{
+    align-items: center;
+    gap: 40px;
+}
+
+.txt-meio-site h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 17px;
+}
+
+.txt-meio-site p span{
+    color: blue;
+}
+
+.ca-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    transition: .2s;
+    margin: 0 5px;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.ca-social i{
+    font-size: 30px;
+}
+
+/*TIPO DO FORMULARIO*/
+
+section .formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+    border-radius: 15px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+form .submit-form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .submit-form input[type=submit]{
+    width:120px ;
+    height: 50px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+    background-color: black;
+    color: white;
+}
+
+.formulario h2{
+    margin-bottom: 25px;
+}
+
+form .submit-form input:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px blue;
+}
+
+/*ESTILO DO FOOTER*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0px 0px 10px blue;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer h2 span{
+    color: blue;
+}
+
+footer a{
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px;
+}
+
+footer .email-footer i{
+    font-size:20px ;
+    color: blue;
+}
+
+
+
+
+
+
+
